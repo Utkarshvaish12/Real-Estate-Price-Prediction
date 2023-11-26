@@ -1,8 +1,8 @@
 # Real-Estate-Price-Prediction
 
-Developed a predictive model to estimate property prices
-Solves the problem of setting competitive property prices
-Benefiting both sellers and buyers by providing accurate market value information
+Developed a predictive model to estimate property prices,
+ Solves the problem of setting competitive property prices,
+ Benefiting both sellers and buyers by providing accurate market value information
 
 About The Data Set:
 Shape: (318851,20)
