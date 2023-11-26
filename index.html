@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Real Estate Analysis</title>
+    <style>
+        body {
+            background-image: url('https://static.vecteezy.com/system/resources/previews/010/008/086/non_2x/background-dimension-3d-graphic-message-board-for-text-and-message-design-line-shadow-for-modern-web-design-free-vector.jpg');
+            background-size: cover;
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        form {
+            background-color: #fff;
+            width: 60%;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            width: 300px;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        input[type='text'] {
+            width: 80%;
+            padding: 8px;
+            margin: 6px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type='submit'] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type='submit']:hover {
+            background-color: #45a049;
+        }
+
+        label {
+            color: #555;
+            display: block;
+            text-align: left;
+            margin-top: 10px;
+        }
+
+        label, span {
+            display: inline-block;
+            width: 45%;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 style="color: white;">Real Estate Analysis</h2>
+    <form action='/predict' method="POST">
+        <label><span>Longitute:</span> <input type='text' name='L'></label>
+        <label><span>Latitute:</span> <input type='text' name='La'></label>
+        <label><span>Total Price:</span> <input type='text' name='TP'></label>
+        <label><span>Square:</span> <input type='text' name='S'></label>
+        <label><span>Living Room:</span> <input type='text' name='LR'></label>
+        <label><span>Drawing Room:</span> <input type='text' name='DR'></label>
+        <label><span>Kitchen:</span> <input type='text' name='K'></label>
+        <label><span>Bathroom:</span> <input type='text' name='BR'></label>
+        <label><span>Floor:</span> <input type='text' name='F'></label>
+        <label><span>Building Type:</span> <input type='text' name='BT'></label>
+        <label><span>Construction Time:</span> <input type='text' name='CT'></label>
+        <label><span>Renovation Condition:</span> <input type='text' name='RC'></label>
+        <label><span>Building Structure:</span> <input type='text' name='BS'></label>
+        <label><span>Ladder Ratio:</span> <input type='text' name='LRa'></label>
+        <label><span>Elevator:</span> <input type='text' name='E'></label>
+        <label><span>Five Years Property:</span> <input type='text' name='YP'></label>
+        <label><span>Subway:</span> <input type='text' name='Sub'></label>
+        <label><span>District:</span> <input type='text' name='D'></label>
+
+        <label>Price: {{result}}</label><br>
+
+        <input type='submit' value='Predict'>
+    </form>
+</body>
+
+</html>
